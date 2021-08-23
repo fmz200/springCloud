@@ -10,7 +10,7 @@
     <version>1.0-SNAPSHOT</version>
 
     <modules>
-        <module>customService</module>
+        <module>customerService</module>
         <module>systemService</module>
     </modules>
 
