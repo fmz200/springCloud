@@ -9,18 +9,13 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>customService</artifactId>
-
-    <properties>
-        <maven.compiler.source>8</maven.compiler.source>
-        <maven.compiler.target>8</maven.compiler.target>
-    </properties>
+    <artifactId>cloudCustomerService</artifactId>
 
     <dependencies>
         <!-- 引入实体的包-->
         <dependency>
             <groupId>org.example</groupId>
-            <artifactId>springCloud</artifactId>
+            <artifactId>cloudApiService</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
