@@ -3,7 +3,7 @@ server:
 #spring相关配置
 spring:
   application:
-    name: mcroservice-payment  #服务名
+    name: cloudCustomerService  #服务名
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource  #当前数据源操作类型
     driver-class-name: org.gjt.mm.mysql.Driver  #数据库驱动包

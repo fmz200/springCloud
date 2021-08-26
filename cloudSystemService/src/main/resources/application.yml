@@ -2,4 +2,4 @@ server:
   port: 80
 spring:
   application:
-    name: mcroservice-order  #服务名
+    name: cloudSystemService  #服务名
