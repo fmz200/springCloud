@@ -16,5 +16,5 @@ import java.io.Serializable;
 public class Payment implements Serializable {
     private Long id;
     // 微服务 一个服务对应一个数据库，同一个信息可能存在不同的数据库
-    private  String serial;
+    private String serial;
 }

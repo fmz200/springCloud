@@ -2,14 +2,16 @@ package sun;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 /**
  *
  * @author admin
  */
 @SpringBootApplication
-public class SystemServiceApplication {
+@EnableEurekaClient
+public class CloudSystemServiceApplication {
     public static void main(String[] args) {
-        SpringApplication.run(SystemServiceApplication.class, args);
+        SpringApplication.run(CloudSystemServiceApplication.class, args);
     }
 }
