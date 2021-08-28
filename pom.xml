@@ -11,11 +11,12 @@
 
     <modules>
         <module>cloudApiService</module>
-        <module>cloudCustomerService</module>
         <module>cloudSystemService</module>
+        <module>cloudCustomerService</module>
+        <module>cloudCustomer2Service</module>
         <module>cloudEurekaService</module>
-        <module>config</module>
         <module>cloudEureka2Service</module>
+        <module>config</module>
     </modules>
 
     <properties>
