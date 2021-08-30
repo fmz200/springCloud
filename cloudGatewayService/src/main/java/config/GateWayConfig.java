@@ -17,3 +17,4 @@ public class GateWayConfig {
         routes.route("patn_route_buba", r -> r.path("/guonei").uri("http://news.baidu.com/guonei")).build();
         return routes.build();
     }
+}
