@@ -16,7 +16,7 @@
         <module>cloudCustomer2Service</module>
         <module>cloudEurekaService</module>
         <module>cloudEureka2Service</module>
-        <module>config</module>
+        <module>cloudGatewayService</module>
     </modules>
 
     <properties>
