@@ -18,6 +18,9 @@
         <module>cloudEureka2Service</module>
         <module>cloudGatewayService</module>
         <module>cloudSystemFeignService</module>
+        <module>cloudCustomerHystrixService</module>
+        <module>cloudSystemFeignHystrixService</module>
+        <module>cloudSystemHystrixDashboar</module>
     </modules>
 
     <properties>

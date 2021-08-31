@@ -7,6 +7,8 @@
 /cloudSystemService/target/
 /cloudGatewayService/target/
 /cloudSystemFeignService/target/
+/cloudCustomerHystrixService/target/
+/cloudSystemHystrixDashboar/target/
 
 /cloudApiService/cloudApiService.iml
 /cloudCustomer2Service/cloudCustomer2Service.iml
@@ -16,3 +18,6 @@
 /cloudSystemService/cloudSystemService.iml
 /cloudGatewayService/cloudGatewayService.iml
 /cloudSystemFeignService/cloudSystemFeignService.iml
+/cloudCustomerHystrixService/cloudCustomerHystrixService.iml
+/cloudSystemFeignHystrixService/cloudSystemFeignHystrixService.iml
+/cloudSystemHystrixDashboar/cloudSystemHystrixDashboar.iml
