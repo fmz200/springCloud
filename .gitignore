@@ -7,3 +7,10 @@
 /cloudSystemService/target/
 /cloudGatewayService/target/
 
+/cloudApiService/cloudApiService.iml
+/cloudCustomer2Service/cloudCustomer2Service.iml
+/cloudCustomerService/cloudCustomerService.iml
+/cloudEureka2Service/cloudEureka2Service.iml
+/cloudEurekaService/cloudEurekaService.iml
+/cloudSystemService/cloudSystemService.iml
+/cloudGatewayService/cloudGatewayService.iml

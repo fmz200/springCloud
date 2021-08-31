@@ -10,6 +10,8 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
  */
 @SpringBootApplication
 @EnableEurekaClient
+//name为生产者服务的服务名称  configuration为配置类的类名
+@RibbonClient(name = "cloudCustomerService",configuration = MyselfRule.class)
 public class CloudSystemServiceApplication {
     public static void main(String[] args) {
         SpringApplication.run(CloudSystemServiceApplication.class, args);
