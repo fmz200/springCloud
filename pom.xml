@@ -17,6 +17,7 @@
         <module>cloudEurekaService</module>
         <module>cloudEureka2Service</module>
         <module>cloudGatewayService</module>
+        <module>cloudSystemFeignService</module>
     </modules>
 
     <properties>

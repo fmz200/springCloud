@@ -14,6 +14,7 @@ import sun.pojo.Payment;
 import sun.service.PaymentService;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 /*
  * 提供restful服务  供其他服务调用
@@ -65,5 +66,12 @@ public class PaymentController {
         } else {
             return new CommonResult<>(444, "查询失败8001", null);
         }
+    }
+
+    //模拟业务接口延时3秒
+    @GetMapping("/payment/feign/timeout")
+    public String PaymentFeignTimeOut() throws InterruptedException {
+        TimeUnit.SECONDS.sleep(3);
+        return "8001";
     }
 }

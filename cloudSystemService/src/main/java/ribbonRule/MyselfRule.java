@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Configuration;
 public class MyselfRule {
     @Bean
     public IRule myRule() {
-        // 定义为随机
+        // 定义为随机（这是轮询吧，但是注释里面写了随机哦）new RestTemplate() 是随机
         return new RoundRobinRule();
     }
 

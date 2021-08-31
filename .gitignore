@@ -6,6 +6,7 @@
 /cloudEurekaService/target/
 /cloudSystemService/target/
 /cloudGatewayService/target/
+/cloudSystemFeignService/target/
 
 /cloudApiService/cloudApiService.iml
 /cloudCustomer2Service/cloudCustomer2Service.iml
@@ -14,3 +15,4 @@
 /cloudEurekaService/cloudEurekaService.iml
 /cloudSystemService/cloudSystemService.iml
 /cloudGatewayService/cloudGatewayService.iml
+/cloudSystemFeignService/cloudSystemFeignService.iml
