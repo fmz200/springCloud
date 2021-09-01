@@ -12,7 +12,7 @@ spring:
       routes:
         - id: payment_route # 路由的id,没有规定规则但要求唯一,建议配合服务名
           #匹配后提供服务的路由地址
-          #uri: http://localhost:8001
+          #uri: http://localhost:8001，如果是lb:开头的协议，需要从注册中心去拉取注册的微服务名
           uri: lb://CLOUDCUSTOMERSERVICE
           predicates:
             - Path=/payment/get/** # 断言，路径相匹配的进行路由
@@ -21,6 +21,11 @@ spring:
           uri: lb://CLOUDCUSTOMERSERVICE
           predicates:
             Path=/payment/lb/** #断言,路径相匹配的进行路由
+        - id: payment_route3
+          #uri: http://localhost:8001
+          uri: lb://CLOUDCUSTOMERSERVICE
+          predicates:
+            - Host=**.testmall.com #断言,路径相匹配的进行路由
 eureka:
   instance:
     hostname: cloud-gateway-service
