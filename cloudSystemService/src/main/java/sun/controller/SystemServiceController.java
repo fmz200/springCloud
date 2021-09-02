@@ -22,8 +22,7 @@ import javax.servlet.http.HttpServletResponse;
 public class SystemServiceController {
 
     @RequestMapping(value = "hello")
-    public void login(HttpServletRequest request, HttpServletResponse response,
-                      @RequestBody ServiceInfo serviceInfo) {
+    public void login(HttpServletRequest request, HttpServletResponse response, @RequestBody ServiceInfo serviceInfo) {
 
         RestfulResult restfulResult = new RestfulResult();
 

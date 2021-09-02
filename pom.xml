@@ -11,14 +11,14 @@
 
     <modules>
         <module>cloudApiService</module>
-        <module>cloudSystemService</module>
         <module>cloudCustomerService</module>
         <module>cloudCustomer2Service</module>
+        <module>cloudCustomerHystrixService</module>
         <module>cloudEurekaService</module>
         <module>cloudEureka2Service</module>
         <module>cloudGatewayService</module>
+        <module>cloudSystemService</module>
         <module>cloudSystemFeignService</module>
-        <module>cloudCustomerHystrixService</module>
         <module>cloudSystemFeignHystrixService</module>
         <module>cloudSystemHystrixDashboar</module>
     </modules>
