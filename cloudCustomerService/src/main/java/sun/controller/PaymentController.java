@@ -47,7 +47,7 @@ public class PaymentController {
 
 
     @PostMapping("/payment/create")
-    public CommonResult create(@RequestBody Payment dept) {
+    public CommonResult<Integer> create(@RequestBody Payment dept) {
         int i = paymentService.create(dept);
         log.info("***************插入成功*******" + i);
         if (i > 0) {
@@ -58,7 +58,7 @@ public class PaymentController {
     }
 
     @GetMapping("/payment/get/{id}")
-    public CommonResult queryById(@PathVariable("id") Long id) {
+    public CommonResult<Payment> queryById(@PathVariable("id") Long id) {
         Payment payment = paymentService.queryById(id);
         log.info("***************查询成功*********" + payment);
         if (payment != null) {
@@ -73,5 +73,14 @@ public class PaymentController {
     public String PaymentFeignTimeOut() throws InterruptedException {
         TimeUnit.SECONDS.sleep(3);
         return "8001";
+    }
+
+    @GetMapping("/payment/login")
+    public CommonResult<Payment> login() {
+        Payment payment = new Payment();
+        payment.setId(666L);
+        payment.setSerial("success");
+        log.info("***************登录成功*********, {}", payment);
+        return new CommonResult<>(200, "查询成功8001", payment);
     }
 }
