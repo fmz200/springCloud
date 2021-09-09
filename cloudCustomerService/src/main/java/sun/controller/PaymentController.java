@@ -68,6 +68,15 @@ public class PaymentController {
         }
     }
 
+    @GetMapping("/payment/getMenuList")
+    public CommonResult<Payment> getMenuList() {
+        Payment payment = new Payment();
+        payment.setId(666L);
+        payment.setSerial("测试菜单");
+        log.info("***************查询成功*********" + payment);
+        return new CommonResult<>(200, "查询成功8001", payment);
+    }
+
     //模拟业务接口延时3秒
     @GetMapping("/payment/feign/timeout")
     public String PaymentFeignTimeOut() throws InterruptedException {
